@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Registrar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>What's your name?</ion-label>
+    <ion-input [(ngModel)]="usuario.nome" placeholder="Developer Name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>What's your special skill?</ion-label>
+    <ion-input [(ngModel)]="usuario.email" placeholder="Special Skill"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>How long have you been working?</ion-label>
+    <ion-input [(ngModel)]="usuario.senha" placeholder="Years of experience"></ion-input>
+  </ion-item>
+  <button ion-button full (click)="registrar()">Add Developer Info</button>
+
+
+</ion-content>
